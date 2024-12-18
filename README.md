@@ -39,35 +39,6 @@ Leverages the `rich` library for an interactive and visually appealing console e
 
 ---
 
-## Files Overview:
-
-### `project.py`
-
-The main script of the project containing all the core functionalities:
-
-- **`create_leet_variations(word)`**: Generates leet-speak variations of a given word.
-- **`generate_wordlist()`**: Combines components and settings to generate a comprehensive wordlist and save it to a file.
-- **`add_components()`**: Allows users to add new words, numbers, or special characters to the wordlist components.
-- **`remove_components()`**: Enables users to remove unwanted components from their wordlist.
-- **`configure_settings()`**: Provides a menu for configuring wordlist generation parameters.
-- **`view_components()`**: Displays the current components categorized into words, numbers, and special characters.
-- **`save_configuration()` and `load_configuration()`**: Save and retrieve configurations in JSON format.
-- **`main()`**: The entry point that ties everything together into a menu-driven interface.
-
-### `test_project.py`
-
-A comprehensive test suite written with `pytest` to verify the correctness and robustness of the project. It includes tests for:
-- Wordlist generation under various settings.
-- Component addition and removal.
-- Configuration persistence (save/load functionality).
-- Leet-speak transformation accuracy.
-
-### `README.md`
-
-The documentation file (this one!) that provides a detailed overview of the project, its purpose, features, and usage.
-
----
-
 ## Design Choices:
 
 ### Rich Library
@@ -103,13 +74,7 @@ The project is designed in a modular fashion, with separate functions for each t
      - Configure generation settings.
      - Generate and save wordlists.
 
-3. **Testing the Tool**:
-   - Run the automated tests to verify functionality:
-     ```bash
-     pytest test_project.py
-     ```
-
-4. **Saving and Loading Configurations**:
+3. **Saving and Loading Configurations**:
    - Use the save and load options to preserve and restore your settings and components.
 
 ---
